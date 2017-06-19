@@ -1,0 +1,173 @@
+@keyframes txt {
+    100% {
+
+
+    }
+}
+
+@keyframes drawer {
+    100% {
+        visibility: visible;
+    }
+}
+.material-icons{
+    visibility: hidden;
+    animation: drawer 1s forwards;
+}
+
+:root {
+    --mdc-theme-primary: #41533B;
+    --mdc-theme-accent: #9e9a75;
+}
+.mdc-theme--primary-bg {
+    background: #41533B!important
+}
+
+.mdc-theme--accent-bg {
+    background: #9e9a75!important
+}
+
+.mdc-theme--background{
+    background: #303030;
+}
+
+.mdc-temporary-drawer .mdc-list-item__start-detail{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mdc-list-divider {
+    border-bottom: 1px solid #424242;
+}
+
+::selection {
+    color: #f0f4c3;
+    background: #9e9a75;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #f0f4c3;
+    background: #9e9a75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', monospace, sans-serif;
+    cursor: default;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+html, body {
+    position: relative
+}
+
+a{
+    color: #9e9a75;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.appbar {
+    position: fixed;
+    background: #41533B;
+    height: auto;
+    width: 100vw;
+    min-height: 64px;
+    padding: 20px 28px;
+    top: 0;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+/*menu button. */
+.menu {
+    background: none;
+    border: none;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    fill:#FFF;
+}
+
+.mdc-list{
+    color: #FFF;
+    fill: #FFF;
+}
+
+.title{
+    position: absolute;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+    overflow-y: scroll;
+}
+
+main {
+    margin-top: 64px;
+}
+
+
+p, h1, h2, h3, h4, ul{
+    padding: 12px 31px;
+    max-width: 2000px;
+    text-align: justify;
+
+}
+
+blockquote{
+    border-left:4px solid #9e9a75;
+}
+
+img{
+    width: 95%;
+    max-width: 400px;
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+main hr{
+    width: 98%;
+    margin: auto;
+}
+
+table{
+    border: 3px solid #212121;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+tbody{
+    border: #212121;
+}
+
+td{
+    padding: 6px;
+}
+
+tr{
+    background: #212121;
+}
+
+@media (max-width: 599px) {
+.appbar {
+    min-height: 56px;
+    padding: 16px;
+}
+p, h2, h3, h4, ul, pre{
+    padding: 12px 19px;
+}
+
+main {
+    margin-top: 56px;
+}
+}
